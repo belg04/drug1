@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{803AEBEA-49E1-413D-B32E-1AC08785B716}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>drug1</RootNamespace>
+    <AssemblyName>drug1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="available_remaining_medicines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="available_remaining_medicines.Designer.cs">
+      <DependentUpon>available_remaining_medicines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy.Designer.cs">
+      <DependentUpon>buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Expired_drug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expired_drug.Designer.cs">
+      <DependentUpon>Expired_drug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manual.Designer.cs">
+      <DependentUpon>manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="drugstoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugstoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="drug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drug.Designer.cs">
+      <DependentUpon>drug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medications_received .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medications_received .Designer.cs">
+      <DependentUpon>medications_received .cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicines_by_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medicines_by_category.Designer.cs">
+      <DependentUpon>medicines_by_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="operations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operations.Designer.cs">
+      <DependentUpon>operations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="price_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="price_list.Designer.cs">
+      <DependentUpon>price_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="provider.Designer.cs">
+      <DependentUpon>provider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sale.Designer.cs">
+      <DependentUpon>sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipmentcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipmentcs.Designer.cs">
+      <DependentUpon>shipmentcs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="available_remaining_medicines.resx">
+      <DependentUpon>available_remaining_medicines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy.resx">
+      <DependentUpon>buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expired_drug.resx">
+      <DependentUpon>Expired_drug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manual.resx">
+      <DependentUpon>manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drug.resx">
+      <DependentUpon>drug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medications_received .resx">
+      <DependentUpon>medications_received .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicines_by_category.resx">
+      <DependentUpon>medicines_by_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operations.resx">
+      <DependentUpon>operations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="price_list.resx">
+      <DependentUpon>price_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="provider.resx">
+      <DependentUpon>provider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sale.resx">
+      <DependentUpon>sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="drugstoreDataSet.xsc">
+      <DependentUpon>drugstoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet.xss">
+      <DependentUpon>drugstoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet1.xsc">
+      <DependentUpon>drugstoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet1.xss">
+      <DependentUpon>drugstoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet2.xsc">
+      <DependentUpon>drugstoreDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet2.xss">
+      <DependentUpon>drugstoreDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet3.xsc">
+      <DependentUpon>drugstoreDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet3.xss">
+      <DependentUpon>drugstoreDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet4.xsc">
+      <DependentUpon>drugstoreDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet4.xss">
+      <DependentUpon>drugstoreDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet5.xsc">
+      <DependentUpon>drugstoreDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet5.xss">
+      <DependentUpon>drugstoreDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet6.xsc">
+      <DependentUpon>drugstoreDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet6.xss">
+      <DependentUpon>drugstoreDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet7.xsc">
+      <DependentUpon>drugstoreDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="drugstoreDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drugstoreDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drugstoreDataSet7.xss">
+      <DependentUpon>drugstoreDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

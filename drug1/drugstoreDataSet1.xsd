@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="drugstoreDataSet1" targetNamespace="http://tempuri.org/drugstoreDataSet1.xsd" xmlns:mstns="http://tempuri.org/drugstoreDataSet1.xsd" xmlns="http://tempuri.org/drugstoreDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="drugstoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="drugstoreConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.drug1.Properties.Settings.GlobalReference.Default.drugstoreConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="лекарст поступилоTableAdapter" GeneratorDataComponentClassName="лекарст_поступилоTableAdapter" Name="лекарст поступило" UserDataComponentName="лекарст поступилоTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="drugstoreConnectionString (Settings)" DbObjectName="drugstore.dbo.[лекарст поступило]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT quantity, id_drug, name_of_drug FROM dbo.[лекарст поступило]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="id_drug" DataSetColumn="id_drug" />
+              <Mapping SourceColumn="name_of_drug" DataSetColumn="name_of_drug" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="drugstoreDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="drugstoreDataSet1" msprop:Generator_DataSetName="drugstoreDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="лекарст_x0020_поступило" msprop:Generator_RowEvHandlerName="лекарст_поступилоRowChangeEventHandler" msprop:Generator_RowDeletedName="лекарст_поступилоRowDeleted" msprop:Generator_RowDeletingName="лекарст_поступилоRowDeleting" msprop:Generator_RowEvArgName="лекарст_поступилоRowChangeEvent" msprop:Generator_TablePropName="лекарст_поступило" msprop:Generator_RowChangedName="лекарст_поступилоRowChanged" msprop:Generator_RowChangingName="лекарст_поступилоRowChanging" msprop:Generator_TableClassName="лекарст_поступилоDataTable" msprop:Generator_RowClassName="лекарст_поступилоRow" msprop:Generator_TableVarName="tableлекарст_поступило" msprop:Generator_UserTableName="лекарст поступило">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="quantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_UserColumnName="quantity" type="xs:int" minOccurs="0" />
+              <xs:element name="id_drug" msprop:Generator_ColumnPropNameInRow="id_drug" msprop:Generator_ColumnPropNameInTable="id_drugColumn" msprop:Generator_ColumnVarNameInTable="columnid_drug" msprop:Generator_UserColumnName="id_drug" type="xs:int" />
+              <xs:element name="name_of_drug" msprop:Generator_ColumnPropNameInRow="name_of_drug" msprop:Generator_ColumnPropNameInTable="name_of_drugColumn" msprop:Generator_ColumnVarNameInTable="columnname_of_drug" msprop:Generator_UserColumnName="name_of_drug">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
